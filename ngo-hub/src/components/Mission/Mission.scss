@@ -1,0 +1,78 @@
+// src/components/Mission/Mission.scss
+.mission {
+  padding: 2rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #035ab1;
+  }
+
+  &__intro {
+    font-size: 1rem;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.5;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    background-color: #e6f2ff;
+    border: 1px solid #003366;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #025ab3;
+  }
+
+  &__list {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+
+    li {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      color: #333333;
+    }
+  }
+
+.mission__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // space between icon and text
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #025ab3;
+}
+
+.mission__icon {
+  font-size: 1.5rem;
+}
+ 
+}

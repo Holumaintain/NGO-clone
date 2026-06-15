@@ -1,0 +1,72 @@
+.section {
+  max-width: 900px;   // reduce width
+  margin: 0 auto;     // center horizontally
+  padding: 4rem 2rem;
+  background: $light; // optional background color
+}
+
+
+.card {
+  background: var(--light);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+
+  &.btn-primary {
+    background-color: var(--secondary);
+    color: white;
+    &:hover {
+      background-color: darken(var(--secondary), 10%);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: #e5e7eb;
+    color: var(--dark);
+    &:hover {
+      background-color: #d1d5db;
+    }
+  }
+}
+
+// :root {
+//   /* Typography */
+//   --font-size-h1: clamp(1.8rem, 2vw + 1rem, 3.5rem);
+//   --font-size-h2: clamp(1.4rem, 1.5vw + 0.8rem, 2.2rem);
+//   --font-size-h3: clamp(1.2rem, 1vw + 0.6rem, 1.8rem);
+//   --font-size-p: clamp(0.9rem, 0.8vw + 0.5rem, 1.1rem);
+
+//   /* Spacing */
+//   --section-padding: clamp(1.5rem, 3vw, 4rem);
+//   --card-padding: clamp(1rem, 2vw, 2rem);
+//   --gap: clamp(0.8rem, 2vw, 2rem);
+
+//   /* Radius and shadows */
+//   --radius: 12px;
+//   --shadow-strong: 0 6px 16px rgba(0,0,0,0.15);
+//   --shadow-hover: 0 10px 24px rgba(0,0,0,0.25);
+
+//   /* Colors */
+//   --text: #333;
+//   --text-h: #08060d;
+//   --bg: #ffffff;
+//   --accent: #045db7;
+//   --accent-alt: #009688;
+// }
+

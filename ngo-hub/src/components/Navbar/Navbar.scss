@@ -1,0 +1,141 @@
+@import "../../styles/variables";
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.7rem 1.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: $radius;
+  background: rgba(255, 255, 255, 0.12);
+
+  img {
+    height: 32px;
+    border-radius: $radius;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: $light;
+  }
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: relative;
+
+    a,
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+      color: $light;
+      font-weight: 500;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: 0.2s ease;
+      padding: 0.2rem 0.4rem;
+    }
+
+    a:hover,
+    span:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.nav-icon {
+  font-size: 0.85rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  min-width: 180px;
+  background: $dark;
+  border-radius: $radius;
+  padding: 0.6rem;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  li a {
+    color: $light;
+    padding: 0.3rem 0.4rem;
+    border-radius: $radius;
+    font-size: 0.85rem;
+  }
+
+  li a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: $secondary;
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.navbar__cta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: $secondary; /* orange */
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    background: darken($secondary, 10%);
+  }
+}
+
+.navbar__back-home {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #045db7; /* blue */
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: darken(#045db7, 10%);
+  }
+}

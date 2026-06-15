@@ -1,0 +1,79 @@
+.impact {
+  padding: 4rem 0rem;
+  margin-bottom: 0;
+
+  &__heading {
+    margin-bottom: 0; // prevent extra gap below heading
+  }
+
+  &__grid {
+    margin-bottom: 0; // ensure grid doesn’t push space down
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #047cd8;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  &__card {
+    /* Gradient background */
+    background: linear-gradient(to bottom right, #e6f2ff, #ffffff);
+    border-left: 6px solid #0473e1; // bold left border
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit; // inherit card text color
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Text colors */
+  &__number {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #024c95; // deep blue
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #024c95; // slightly lighter blue
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    flex-grow: 1;
+    color: #333; // dark gray for readability
+  }
+}

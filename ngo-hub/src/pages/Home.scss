@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Each section is now a REAL container */
+.home__section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.home__section--tight {
+  padding: 0; // no extra spacing
+}
+
+
+/* inner wrapper keeps content centered */
+.home__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* alternating backgrounds */
+.home__section:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* hero overrides */
+.home__hero {
+  padding: 0;
+}
+
+/* footer overrides */
+.home__footer {
+  padding: 0;
+}
